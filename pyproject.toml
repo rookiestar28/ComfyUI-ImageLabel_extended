@@ -1,0 +1,25 @@
+[project]
+name = "comfyui-imagelabel"
+description = "A ComfyUI node that extends an image vertically to add a label"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["torch", "torchvision", "Pillow>=8"]
+requires-python = ">= 3.8"
+authors = [
+    {name = "Gremlation", email = "gremlation@proton.me"},
+]
+maintainers = [
+    {name = "Gremlation", email = "gremlation@proton.me"},
+]
+readme = "README.md"
+keywords = ["ComfyUI"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[project.urls]
+Repository = "https://github.com/gremlation/ComfyUI-ImageLabel"
+
+[tool.comfy]
+PublisherId = "gremlation"
+DisplayName = "ComfyUI-ImageLabel"
