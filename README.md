@@ -8,11 +8,16 @@ A ComfyUI node that extends an image vertically to add a label either above or b
 
 ### ComfyUI-Manager
 
-- Open the manager
-- Pick "Install via Git URL"
-- Enter `https://github.com/Gremlation/ComfyUI-ImageLabel`
+- Open the Manager
+- Pick "Custom Nodes Manager"
+- Search for "ComfyUI-ImageLabel"
+- Install the latest version
+- Restart ComfyUI
 
-You may need to edit `custom_nodes/ComfyUI-Manager/config.ini` and set `security_level = normal-` first.
+### Comfy-Cli
+
+- Run `comfy node install comfyui-imagelabel`
+- Restart ComfyUI
 
 ### Manual
 
