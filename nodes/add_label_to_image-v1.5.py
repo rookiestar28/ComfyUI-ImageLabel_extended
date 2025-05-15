@@ -183,17 +183,6 @@ class AddLabelToImage:
                     if bg_x1 < bg_x2 and bg_y1 < bg_y2:
                         draw.rectangle([bg_x1, bg_y1, bg_x2, bg_y2], fill=parsed_bg_color)
 
-                        
-                        # ---- 臨時調試：保存帶背景但不帶文字的圖像 ----
-                        if i == 0: # 只對第一張圖操作以避免過多文件
-                            try:
-                                temp_img_with_bg = pil_image_to_draw_on.copy() # 複製以避免後續 draw.multiline_text 影響
-                                temp_img_with_bg.save(f"debug_img_with_semitransparent_bg_{i}.png")
-                                print(f"      SAVED: debug_img_with_semitransparent_bg_{i}.png (Mode: {temp_img_with_bg.mode}) to check background transparency.")
-                            except Exception as e_save:
-                                print(f"      Error saving debug image with background: {e_save}")
-                        # ---- 臨時調試結束 ----
-
                 if sized_font:
                     draw.multiline_text(xy=(text_draw_x, text_draw_y), text=current_label_text, fill=parsed_text_color, font=sized_font, anchor=final_anchor, spacing=line_spacing, align="center")
             
