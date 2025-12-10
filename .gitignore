@@ -1,0 +1,13 @@
+﻿fonts/*
+!fonts/.gitkeep
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.vscode/
+text_storage/*
+!text_storage/.gitkeep
+wildcards/*
+!wildcards/.gitkeep
+!wildcards/example_format.txt
